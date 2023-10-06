@@ -2,3 +2,5 @@
   a full control over the configuration of the objects we are creating for this purpose builder design pattern is being used.
 
 * Builder design pattern gives more control over configuration of the object. I have mentioned rest of the things in more detail inside the  builder_design_pattern.py file.
+
+* Singleton pattern, a singleton is just a class that can only have one instance of it. This is used to mainatain just single instance of the application.
