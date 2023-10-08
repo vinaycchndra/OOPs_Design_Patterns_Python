@@ -6,3 +6,38 @@
 * Singleton pattern, a singleton is just a class that can only have one instance of it. This is used to mainatain just single instance of the application.
 
 * The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. Here, the subject is monitored by a group of observers wherein each observer is responsible to accomplish a different task. Whenever the state of the observable subject changes, all observers are notified about the change. More detailed description is in this post 'https://www.linkedin.com/pulse/observer-design-pattern-same-publisher-subscriber-ankita-vijan/'.
+
+* Publisher-Subscriber design pattern: Publisher are the entities which create/publish a message on a topic. They are only concerned with creating the original message and can leave the task of serving to the    subscriber on the messaging infrastructure. 
+				     : Subscribers are the entities who subscribe to a message on a topic.
+				     : In Topic based publish-subscribe pattern, publishers tag each message with the topic instead of referencing specific subscribers. Messaging system then sends 
+				       the messages to all the subscribers who have asked to receive messages on that topic.
+  				     : So in a pub-sub design pattern publisher does not know the subscriber and subscriber does not the publisher neither they interact directly.They interact through this                                             messaging system. Below diagram describes the pub sub design pattern in detail.
+
+
+	
+			***************		a	    \\										****************
+                        * Publisher 1 *	********************//							a	    \\		* Subscriber 1 *
+			***************	  		 		*************************	********************//		****************
+                                                                        *                       * 
+                                                                        *                       *
+			***************		b	    \\		*			*		b,c	    \\		****************
+                        * Publisher 2 *	********************//		*   | PubSub Service |  *       ********************//		* Subscriber 2 *
+			***************					*  Publisher-Subscriber	*					****************
+                                                                        *      Service          *
+									*                       *
+			***************		c	    \\		*			*		a,c	    \\		****************
+                        * Publisher 3 *	********************//	        *************************       ********************//		* Subscriber 3 *
+			***************													****************
+									
+									*************************	
+                                                                        * Topic *  Subscriber   *
+ 									*       *               *
+                                                                        *************************
+			 						*   a	*    S1, S3	*		
+                        						*   	*		*      
+									*   b	*     S2	*		
+                                                                        *     	*	        *
+									*   c   *    S2, S3     *
+									*   	*		*		
+                        					        *************************                                
+	
