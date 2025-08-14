@@ -43,3 +43,5 @@
 	
 
 * The abstract class factory design pattern is utilized when we need to create more than one family of related objects for example furniture with different style or pattern like modern furniture or victorian furniture. below article I have used to write the code and learn : https://medium.com/@kalanamalshan98/abstract-factory-design-pattern-the-ultimate-guide-for-beginners-4b0f97694b00
+
+* Adapter design pattern is used when we have incompatible interfaces 
