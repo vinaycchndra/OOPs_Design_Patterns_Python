@@ -44,4 +44,4 @@
 
 * The abstract class factory design pattern is utilized when we need to create more than one family of related objects for example furniture with different style or pattern like modern furniture or victorian furniture. below article I have used to write the code and learn : https://medium.com/@kalanamalshan98/abstract-factory-design-pattern-the-ultimate-guide-for-beginners-4b0f97694b00
 
-* Adapter design pattern is used when we have incompatible interfaces 
+* Adapter design pattern is used when we have incompatible interfaces for example a data comes from a legacy server in xml and the client wants to have data in json in this case you can write an adapter which will do the task for you. It promotes code reusability and open/closed principle. I have used these references to learn and write this code: https://github.com/ashishps1/awesome-low-level-design/tree/main/design-patterns/python/adapter
