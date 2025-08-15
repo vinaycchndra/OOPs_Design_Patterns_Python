@@ -13,7 +13,7 @@ def main():
 
     # sorting with the quick sort strategy
     quick_sort = QuickSort()
-    arr = [1,2,3,6,7,5]
+    arr = [8,9,10,11,1,2,3,6,7,13,5]
     sorter.set_strategy(quick_sort)
     sorter.sort(arr)
 
